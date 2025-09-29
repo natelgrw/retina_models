@@ -6,12 +6,11 @@ ReTiNA is a collection of machine learning models under active development for p
 
 The ReTiNA dataset contains:
 
-- 4,359,188 unique molecule–environment combinations, the largest singular LC-MS retention time dataset of its kind to date
+- 4,358,475 unique molecule–environment combinations, the largest singular LC-MS retention time dataset of its kind to date
 - Experimentally measured retention times, in seconds, curated from public datasets, benchmark papers, and literature
+- 160 calculated chemical descriptors for 641,647 unique compounds and 6 unique solvents
 
 The dataset is actively expanding with new experimental retention time values from the Coley Research Group at MIT, ensuring it remains a growing resource for optical property prediction.
-
-Additionally, ReTiNA includes ```.smi``` lists of 641,651 unique compounds and 6 unique solvents in the dataset for chemical descriptor calculations.
 
 91 distinct LC-MS setup environments are used in ReTiNA. Each environment consists of:
 
