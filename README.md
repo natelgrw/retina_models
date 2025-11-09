@@ -1,8 +1,8 @@
 # ReTiNA: Automated LC-MS Retention Time Modeling
 
-Current Version: **1.0.0**
-
 ReTiNA is a collection of machine learning models under active development for predicting small molecule retention times in LC-MS workflows.
+
+Current Version: **1.0.0**
 
 ## 🌀 Available Models
 
