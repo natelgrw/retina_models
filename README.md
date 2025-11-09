@@ -12,10 +12,10 @@ This repository contains scripts for model training and processing, along with m
 
 For retention time prediction, we recommend that you use **ReTiNA_XGB1**, the model with the greatest overall prediction accuracy.
 
-| Model | Architecture | Overall RMSE (s) | Overall MAE (s) | Overall R<sup>2</sup> |
-|-----|-----|-----|-----|-----|
-| ReTiNA_XGB1 | XGBoost | 182.81 | 119.30 | 0.659 |
-| ReTiNA_MLP1 | PyTorch Residual MLP | 202.67 | 141.79 | 0.516 |
+| Model | Architecture | Overall RMSE (s) | Overall MAE (s) | Overall R<sup>2</sup> | Status |
+|-----|-----|-----|-----|-----|-----|
+| ReTiNA_XGB1 | XGBoost | 182.81 | 119.30 | 0.659 | Active |
+| ReTiNA_MLP1 | PyTorch Residual MLP | 202.67 | 141.79 | 0.516 | Active |
 
 All models were evaluated across rigorous scaffold, cluster, and method splits.
 
