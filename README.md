@@ -67,7 +67,7 @@ If you use a ReTiNA prediction model in a project, please cite the following:
 If you use the ReTiNA dataset in a project, please cite the following:
 
 ```
-@dataset{natelgrwretinadataset,
+@dataset{retinadataset,
   title={ReTiNA: A Benchmark Dataset for LC-MS Retention Time Modeling},
   author={Leung, Nathan},
   institution={Coley Research Group @ MIT}
