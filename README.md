@@ -8,7 +8,7 @@ Active ReTiNA prediction models are accessible at this [Hugging Face Model Repos
 
 This repository contains scripts for model training and processing, along with model performance metrics.
 
-## 🌀 Available Models
+## 🌀 Models
 
 For retention time prediction, we recommend that you use **ReTiNA_XGB1**, the model with the greatest overall prediction accuracy.
 
