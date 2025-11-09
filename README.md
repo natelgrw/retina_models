@@ -14,8 +14,8 @@ For retention time prediction, we recommend that you use **ReTiNA_XGB1**, the mo
 
 | Model | Architecture | Overall RMSE (s) | Overall MAE (s) | Overall R<sup>2</sup> | Status |
 |-----|-----|-----|-----|-----|-----|
-| ReTiNA_XGB1 | XGBoost | 182.81 | 119.30 | 0.659 | Active |
-| ReTiNA_MLP1 | PyTorch Residual MLP | 202.67 | 141.79 | 0.516 | Active |
+| **ReTiNA_XGB1** | XGBoost | 182.81 | 119.30 | 0.659 | Active |
+| **ReTiNA_MLP1** | PyTorch Residual MLP | 202.67 | 141.79 | 0.516 | Active |
 
 All models were evaluated across rigorous scaffold, cluster, and method splits.
 
