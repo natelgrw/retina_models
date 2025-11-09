@@ -1,0 +1,72 @@
+{
+  "model": "ReTiNA_MLP1",
+  "model_type": "PyTorch MLP",
+  "environment": "retinaenv",
+  "hyperparameters": {
+    "hidden_layers": [
+      1024,
+      512,
+      256,
+      128,
+      64
+    ],
+    "dropout_rate": 0.3,
+    "use_batch_norm": true,
+    "use_residual": true,
+    "learning_rate": 0.001,
+    "batch_size": 128,
+    "max_epochs": 500,
+    "early_stopping_patience": 50,
+    "early_stopping_min_delta": 0.0001,
+    "lr_scheduler_patience": 20,
+    "lr_scheduler_factor": 0.5,
+    "lr_warmup_epochs": 5,
+    "weight_decay": 1e-05,
+    "grad_clip_norm": 1.0,
+    "optimizer": "AdamW",
+    "random_state": 42
+  },
+  "n_features": 292,
+  "n_samples": 1199039,
+  "hardware": {
+    "compute_type": "CPU",
+    "cpu": {
+    "model": "Apple M3",
+    "architecture": "ARM64 (Apple Silicon)",
+    "performance_cores": 4,
+    "efficiency_cores": 4,
+    "total_cores": 8
+  },
+    "ram_gb": 18
+  },
+  "cross_validation": {
+    "scaffold": {
+      "RMSE": 125.16231459856242,
+      "MAE": 79.48838348388672,
+      "R2": 0.9027936935424805,
+      "Pearson_r": 0.9510846138000488,
+      "Within_10s": 11.817973874585544
+    },
+    "method": {
+      "RMSE": 345.21536818821374,
+      "MAE": 257.21956329345704,
+      "R2": -0.1946425437927246,
+      "Pearson_r": 0.7587866187095642,
+      "Within_10s": 3.5025470031224146
+    },
+    "cluster": {
+      "RMSE": 137.64514954189713,
+      "MAE": 88.67213745117188,
+      "R2": 0.8405327200889587,
+      "Pearson_r": 0.9197794198989868,
+      "Within_10s": 10.643687115987415
+    },
+    "overall": {
+      "RMSE": 202.6742774428911,
+      "MAE": 141.7933614095052,
+      "R2": 0.5162279566129049,
+      "Pearson_r": 0.8765501379966736,
+      "Within_10s": 8.654735997898458
+    }
+  }
+}

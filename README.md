@@ -1,18 +1,27 @@
-# ReTiNA: Automated LC-MS Retention Time Modeling
+# ReTiNA: Automated LC-MS Retention Time Prediction Modeling
 
 ReTiNA is a collection of machine learning models under active development for predicting small molecule retention times in LC-MS workflows.
+
+## 🌀 Available Models
+
+| Model | Architecture | Overall RMSE (s) | Overall MAE (s) | Overall R<sup>2</sup> |
+|-----------|----------|-------------|
+| ReTiNA_XGB1 | XGBoost | 182.81 | 119.30 | 0.659 |
+| ReTiNA_MLP1 | PyTorch Residual MLP | 202.67 | 141.79 | 0.516 |
+
+All models were evaluated across rigorous scaffold, cluster, and method splits. Model files are accessible at this [Hugging Face Repository](https://huggingface.co/natelgrw/ReTiNA-Models).
 
 ## ⚗️ The ReTiNA Dataset
 
 The ReTiNA dataset contains:
 
-- 4,358,475 unique molecule–environment combinations, the largest singular LC-MS retention time dataset of its kind to date
+- 119,039 unique molecule–environment combinations, the largest singular LC-MS retention time dataset of its kind to date
 - Experimentally measured retention times, in seconds, curated from public datasets, benchmark papers, and literature
-- 160 calculated chemical descriptors for 641,647 unique compounds and 6 unique solvents
+- Calculated chemical descriptors for 105,809 unique compounds, 6 unique solvents, and 8 unique additives
 
 The dataset is actively expanding with new experimental retention time values from the Coley Research Group at MIT, ensuring it remains a growing resource for optical property prediction.
 
-91 distinct LC-MS setup environments are used in ReTiNA. Each environment consists of:
+73 distinct LC-MS setup environments are used in ReTiNA. Each environment consists of:
 
 - Solvent mixtures A and B, consisting of solvents and solvent additives contributing to pH
 - The mobile phase gradient used, defined by the percentage of solvent mixture B over time (min)
@@ -23,7 +32,7 @@ The dataset is actively expanding with new experimental retention time values fr
 
 The full dataset is accessible at this [Hugging Face Repository](https://huggingface.co/datasets/natelgrw/ReTiNA).
 
-ReTiNA is designed for use in:
+The ReTiNA dataset is designed for use in:
 
 - Estimating retention times for new compound–environment combinations
 - Aiding in peak assignment during LC-MS method development
@@ -34,6 +43,18 @@ ReTiNA is designed for use in:
 Detailed information on the data sources comprising the ReTiNA dataset can be found in the the Hugging Face repository linked above.
 
 ## ✒️ Citation
+
+If you use a ReTiNA prediction model in a project, please cite the following:
+
+```
+@modelcollection{retinamodels,
+  title={ReTiNA-Models: Machine Learning Models for LC-MS Retention Time Prediction},
+  author={Leung, Nathan},
+  institution={Coley Research Group @ MIT}
+  year={2025},
+  howpublished={\url{https://huggingface.co/natelgrw/ReTiNA-Models}},
+}
+```
 
 If you use the ReTiNA dataset in a project, please cite the following:
 

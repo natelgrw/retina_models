@@ -1,0 +1,59 @@
+{
+  "model": "ReTINA_XGB1",
+  "model_type": "XGBoost",
+  "environment": "retinaenv",
+  "hyperparameters": {
+    "n_estimators": 1000,
+    "max_depth": 9,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "tree_method": "hist",
+    "device": "cpu",
+    "random_state": 42,
+    "verbosity": 1
+  },
+  "n_features": 292,
+  "n_samples": 1199039,
+  "hardware": {
+    "compute_type": "CPU",
+    "cpu": {
+    "model": "Apple M3",
+    "architecture": "ARM64 (Apple Silicon)",
+    "performance_cores": 4,
+    "efficiency_cores": 4,
+    "total_cores": 8
+  },
+    "ram_gb": 18
+  },
+  "cross_validation": {
+    "scaffold": {
+      "RMSE": 114.802576284888,
+      "MAE": 65.54669063806685,
+      "R2": 0.9181263184492747,
+      "Pearson_r": 0.9585019489251418,
+      "Within_10s": 18.962689919123363
+    },
+    "method": {
+      "RMSE": 301.3668516296251,
+      "MAE": 209.20277673320598,
+      "R2": 0.210091549114433,
+      "Pearson_r": 0.7575718680119634,
+      "Within_10s": 4.842491865124736
+    },
+    "cluster": {
+      "RMSE": 132.26693911285582,
+      "MAE": 83.15680038297752,
+      "R2": 0.8495317954809739,
+      "Pearson_r": 0.9236580753946202,
+      "Within_10s": 12.808002231046748
+    },
+    "overall": {
+      "RMSE": 182.81212234245635,
+      "MAE": 119.30208925141679,
+      "R2": 0.6592498876815605,
+      "Pearson_r": 0.8799106307772419,
+      "Within_10s": 12.204394671764952
+    }
+  }
+}
