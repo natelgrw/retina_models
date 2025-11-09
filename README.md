@@ -4,6 +4,10 @@ ReTiNA is a collection of machine learning models under active development for p
 
 Current Version: **1.0.0**
 
+Active ReTiNA prediction models are accessible at this [Hugging Face Model Repository](https://huggingface.co/natelgrw/ReTiNA-Models). Depreciated models are available upon request at `natelgrw.tech@gmail.com`. 
+
+This repository contains scripts for model training and processing, along with model performance metrics.
+
 ## 🌀 Available Models
 
 For retention time prediction, we recommend that you use **ReTiNA_XGB1**, the model with the greatest overall prediction accuracy.
@@ -13,7 +17,7 @@ For retention time prediction, we recommend that you use **ReTiNA_XGB1**, the mo
 | ReTiNA_XGB1 | XGBoost | 182.81 | 119.30 | 0.659 |
 | ReTiNA_MLP1 | PyTorch Residual MLP | 202.67 | 141.79 | 0.516 |
 
-All models were evaluated across rigorous scaffold, cluster, and method splits. Model files are accessible at this [Hugging Face Repository](https://huggingface.co/natelgrw/ReTiNA-Models).
+All models were evaluated across rigorous scaffold, cluster, and method splits.
 
 ## ⚗️ The ReTiNA Dataset
 
