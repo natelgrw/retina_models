@@ -5,7 +5,7 @@ ReTiNA is a collection of machine learning models under active development for p
 ## 🌀 Available Models
 
 | Model | Architecture | Overall RMSE (s) | Overall MAE (s) | Overall R<sup>2</sup> |
-|-----------|----------|-------------|
+|-----|-----|-----|-----|-----|
 | ReTiNA_XGB1 | XGBoost | 182.81 | 119.30 | 0.659 |
 | ReTiNA_MLP1 | PyTorch Residual MLP | 202.67 | 141.79 | 0.516 |
 
