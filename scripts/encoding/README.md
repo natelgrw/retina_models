@@ -1,4 +1,4 @@
-# 🔒 Retina Encoder Specification
+# 🔒 ReTiNA Encoder Specification
 
 The lastest version of ReTiNA encodes 292 features per datapoint according to specifications. Models are trained with this encoding to predict compound retention time.
 
