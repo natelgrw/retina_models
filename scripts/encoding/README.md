@@ -13,4 +13,3 @@ The lastest version of ReTiNA encodes 292 features per datapoint according to sp
 | **Column** | 5 | 2 one hot encoders for column type (RP/HI) and 3 numerical measurements |
 | **Flow rate** | 1 | Direct value (mL/min) |
 | **Temperature** | 1 | Direct value (°C) |
-| **TOTAL** | **292** | - |
