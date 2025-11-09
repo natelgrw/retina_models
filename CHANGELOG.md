@@ -1,4 +1,6 @@
-Version **Version 1.0.0**
+Version **1.0.0**
+
+Released: **11/09/2025**
 
 - Full ReTiNA dataset with 109,039 datapoints
 - Scaffold, cluster, and method splits with UMAP plots and split statistics
